@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#58413f",
+                        "surface": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "primary": "#840f16",
+                        "primary-container": "#a52a2a",
+                        "tertiary-container": "#006173",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#ffb3ad",
+                        "error": "#ba1a1a",
+                        "secondary": "#5d5e5f",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#ad302f",
+                        "background": "#f9f9f9",
+                        "tertiary": "#004856",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#8c716e",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed": "#ffdad7",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "on-primary-fixed-variant": "#8c171b",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#454747",
+                        "secondary-fixed": "#e2e2e2",
+                        "secondary-container": "#e2e2e2",
+                        "outline-variant": "#e0bfbc",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-low": "#f3f3f3",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "on-secondary-container": "#636465",
+                        "on-background": "#1a1c1c",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed": "#001f26",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary-container": "#92daee",
+                        "on-primary-container": "#ffc0bb",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-primary-fixed": "#410004",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed": "#aeecff",
+                        "tertiary-fixed-dim": "#8ad1e6",
+                        "on-tertiary-fixed-variant": "#004e5d",
+                        "on-error-container": "#93000a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar - Sub-page variant (No main nav per instructions) -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-[0px_20px_40px_rgba(26,28,28,0.06)] flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="shield">shield</span>
+<span class="text-xl font-bold tracking-tighter text-red-800">CEFS Acadêmico</span>
+</div>
+<div class="hidden md:flex gap-8">
+<a class="text-zinc-500 hover:text-red-800 transition-colors font-medium" href="#">Voltar ao Início</a>
+</div>
+<div class="flex items-center gap-3">
+<img alt="Foto de perfil" class="w-10 h-10 rounded-full border-2 border-primary-fixed" data-alt="professional headshot of a school administrator in a bright office with soft lighting and books in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAim_uejgGAVGMhoXgRMZHrCKyXBqDTCLd5H_JGbUI-9UIWFviM-dQb3CGe2MuJ_piXo7ssb70WhycFaoiv4eQx9vFFUDtH-aRjQTipwTh6yeDoVBrPW0zjiKF21Y7GLnBwZz5prsk3ULfnOAc7fFYKfAtnKd5OTmYZodQPjqvWsdk88rNrKtpYOo69U-NAd3AZzNUsOw1yvxlWPVkQoJLCf_s4qSpKwrYuUK-vb_fWLSnU8u9AH9umqt7VL_Kd1jCQLCa5I31zfJVI"/>
+</div>
+</header>
+<main class="pt-32 pb-24 px-6 max-w-5xl mx-auto">
+<!-- Hero Section: Editorial Style -->
+<section class="mb-20">
+<div class="relative w-full h-[400px] rounded-xl overflow-hidden mb-12 shadow-2xl">
+<img alt="Biblioteca acadêmica" class="w-full h-full object-cover" data-alt="elegant dark wood library shelves with warm ambient lighting and soft bokeh creating a scholarly prestigious atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgQq08nta7CoF4fCtaJu1Bjw8IdKLSee53nPXyx9byLJqYGUyFS9wddmam8uQezkez0uFrUfS4ezmnbQgjli1NKPxLI3WLfsrCBISwdKzwKwyk5IuZTgUQyAm3I2k8eKPojrLcleA6YXz9wwuNYXdk08PpbF1-SeTQyIVuI8IZ2MTukdM3VNTr8KWYJErH8swH326hB7xvziI-D8jvOAZEC1cIQTDTEN5Wuk_PoLg71lTrKgoTHDrwKWloTKdGXV7kkBTc0TTRG5xd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-12 left-12 right-12">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Integridade Acadêmica</span>
+<h1 class="text-5xl md:text-6xl font-extrabold text-white tracking-tighter leading-none">Política de Privacidade</h1>
+<p class="text-white/90 mt-4 text-lg max-w-2xl font-light">Transparência e proteção no tratamento de dados para a comunidade Frei Seráfico, em total conformidade com a LGPD.</p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Introduction / Manifesto -->
+<div class="md:col-span-12 p-8 bg-surface-container-low rounded-xl border-l-4 border-primary">
+<h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+                    Compromisso Institucional
+                </h2>
+<p class="text-secondary leading-relaxed">
+                    O Centro Educacional Frei Seráfico (CEFS) preza pela excelência não apenas no ensino, mas no respeito à individualidade de seus alunos, responsáveis e colaboradores. Esta política detalha como zelamos pela sua segurança digital, assegurando que o tratamento de dados pessoais ocorra de forma ética, segura e transparente, conforme os pilares da Lei Geral de Proteção de Dados (Lei nº 13.709/2018).
+                </p>
+</div>
+<!-- Data Collection -->
+<div class="md:col-span-7 bg-surface-container-lowest p-10 rounded-xl shadow-[0px_20px_40px_rgba(26,28,28,0.03)] flex flex-col gap-6">
+<div class="w-10 h-1 text-primary bg-primary mb-2"></div>
+<h3 class="text-2xl font-bold text-on-surface">Coleta de Dados Pessoais</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0" data-icon="school">school</span>
+<div>
+<p class="font-bold text-on-surface">Dados dos Alunos</p>
+<p class="text-secondary text-sm leading-relaxed">Nome completo, data de nascimento, filiação, histórico escolar, dados de saúde (alergias/medicamentos) e registros de frequência.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary shrink-0" data-icon="family_restroom">family_restroom</span>
+<div>
+<p class="font-bold text-on-surface">Dados dos Responsáveis</p>
+<p class="text-secondary text-sm leading-relaxed">CPF, RG, endereço residencial, informações de contato (e-mail/telefone) e dados bancários para fins de faturamento educacional.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Purpose -->
+<div class="md:col-span-5 bg-primary-container p-10 rounded-xl text-white">
+<h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+                    Finalidade
+                </h3>
+<ul class="space-y-4 text-white/90 text-sm">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check_circle">check_circle</span>
+                        Prestação de serviços educacionais e pedagógicos.
+                    </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check_circle">check_circle</span>
+                        Emissão de documentos oficiais e certificados.
+                    </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check_circle">check_circle</span>
+                        Comunicação institucional e alertas de emergência.
+                    </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check_circle">check_circle</span>
+                        Segurança física através de monitoramento por câmeras.
+                    </li>
+</ul>
+</div>
+<!-- Rights of Holders -->
+<div class="md:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-8 rounded-xl hover:bg-white transition-all group">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="visibility">visibility</span>
+<h4 class="font-bold mb-2">Acesso e Correção</h4>
+<p class="text-secondary text-sm">O titular pode solicitar a confirmação da existência de tratamento e o acesso aos seus dados a qualquer momento.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl hover:bg-white transition-all group">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="delete_sweep">delete_sweep</span>
+<h4 class="font-bold mb-2">Eliminação</h4>
+<p class="text-secondary text-sm">Direito de solicitar a exclusão de dados desnecessários ou tratados em desconformidade com a lei, salvo obrigações legais.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl hover:bg-white transition-all group">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="lock_open">lock_open</span>
+<h4 class="font-bold mb-2">Revogação de Consentimento</h4>
+<p class="text-secondary text-sm">A qualquer tempo, o responsável pode revogar o consentimento para tratamentos que não sejam obrigatórios por lei.</p>
+</div>
+</div>
+<!-- Information Security -->
+<div class="md:col-span-8 p-10 bg-surface-container-highest rounded-xl">
+<h3 class="text-2xl font-bold text-on-surface mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="admin_panel_settings">admin_panel_settings</span>
+                    Segurança da Informação
+                </h3>
+<p class="text-secondary leading-relaxed mb-6">
+                    Adotamos medidas técnicas e administrativas rigorosas para proteger seus dados contra acessos não autorizados, destruição ou perda. Utilizamos criptografia em trânsito, controle restrito de acesso aos servidores e treinamentos periódicos com nosso corpo docente e administrativo sobre boas práticas de privacidade.
+                </p>
+<div class="flex gap-4 items-center">
+<div class="px-4 py-2 bg-white rounded-lg border border-outline-variant flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-tighter">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user">verified_user</span>
+                        SSL Encrypted
+                    </div>
+<div class="px-4 py-2 bg-white rounded-lg border border-outline-variant flex items-center gap-2 text-xs font-bold text-primary uppercase tracking-tighter">
+<span class="material-symbols-outlined text-sm" data-icon="security">security</span>
+                        LGPD Compliant
+                    </div>
+</div>
+</div>
+<!-- DPO Contact -->
+<div class="md:col-span-4 p-10 bg-on-surface text-surface rounded-xl flex flex-col justify-between">
+<div>
+<h3 class="text-xl font-bold mb-4 tracking-tight">Canal do DPO</h3>
+<p class="text-surface/70 text-sm mb-6">Para dúvidas sobre seus dados ou exercício de direitos, entre em contato com nosso Encarregado de Dados (DPO).</p>
+</div>
+<div>
+<div class="mb-4">
+<p class="text-xs uppercase text-surface/50 font-bold tracking-widest mb-1">Encarregado</p>
+<p class="font-medium text-primary-fixed">Dr. Ricardo Seráfico</p>
+</div>
+<a class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full hover:bg-primary-container transition-all text-sm font-bold" href="mailto:privacidade@cefs.edu.br">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+                        privacidade@cefs.edu.br
+                    </a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-zinc-200 bg-zinc-50 py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+<div class="mb-8 md:mb-0">
+<span class="font-bold text-zinc-900 text-lg">CEFS - Centro Educacional Frei Seráfico</span>
+<p class="text-zinc-500 text-xs mt-2 uppercase tracking-widest">© 2024 CEFS - Centro Educacional. Todos os direitos reservados.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 text-sm">
+<a class="text-red-700 underline underline-offset-4 font-bold" href="#">Privacidade</a>
+<a class="text-zinc-500 hover:text-red-800 transition-all uppercase text-[0.75rem] tracking-widest" href="#">Termos de Uso</a>
+<a class="text-zinc-500 hover:text-red-800 transition-all uppercase text-[0.75rem] tracking-widest" href="#">Secretaria Digital</a>
+<a class="text-zinc-500 hover:text-red-800 transition-all uppercase text-[0.75rem] tracking-widest" href="#">Ouvidoria</a>
+</div>
+</div>
+</footer>
+</body></html>
